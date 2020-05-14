@@ -13,10 +13,15 @@ class School
   def add_student(name, grade)
     @name =name
     @grade=grade
-      @hash[@grade]= []
-    @hash[@grade] << @name
-   
     
+    if @hash == {}
+      @hash[grade]= []
+      @hash[grade] << name
+    
+    elsif @hash == @hash[grade]
+      @hash[grade] << name
+    end
+
   end
   
   def grade
