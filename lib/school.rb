@@ -10,7 +10,7 @@ class School
    @hash= {}  
   
   end
-  def add_student=(name, grade)
+  def add_student(name, grade)
     @name =name
     @grade=grade
     
@@ -23,10 +23,6 @@ class School
     end
   end
    
-  def add_student(name, grade)
-     @name =name
-    @grade=grade
-  end
   def grade
   end
   
