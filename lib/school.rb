@@ -21,7 +21,7 @@ class School
     elsif @hash == @hash[grade]
       @hash[grade] << name
     end
-    
+  end
     def add_student(name, grade)
       @name= name
       @grade= grade
