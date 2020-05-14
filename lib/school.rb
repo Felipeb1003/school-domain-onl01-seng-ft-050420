@@ -11,24 +11,12 @@ class School
    @roster= {}  
   
   end
-  def add_student(name, grade)
-    @name =name
-    @grade=grade
-    binding.pry
-    if @roster == {}
-      @roster[grade]= []
-      @roster[grade] << name
-    
-    elsif @roster == @roster[grade]
-      @roster[grade] << name
-    end
-  end
-  
+ 
     def add_student(name, grade)
     @name =name
     @grade=grade
-    binding.pry
-    if @roster.keys.include? == @hash[grade]
+    
+    if @roster.keys.include?(grade)
       @roster[grade] << name
     else
       @roster[grade]= []
